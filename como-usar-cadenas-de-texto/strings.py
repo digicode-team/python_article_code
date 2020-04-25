@@ -41,7 +41,7 @@ texto_base = "Python es un lenguaje de propósito general"
 
 primera_parte = texto_base[:10]
 segunda_parte = texto_base[10:]
-final = segunda_parte = texto_base[-5:]
+final = texto_base[-5:]
 medio = texto_base[13:24]
 
 print(primera_parte, segunda_parte, final, medio, sep="\n")
