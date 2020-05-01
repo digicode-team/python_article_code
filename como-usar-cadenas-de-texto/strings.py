@@ -7,55 +7,55 @@ copia cada linea o cada grupo según te convenga
 
 # Las cadenas de texto se definen entre comillas de 4 formas
 #   comillas dobles
-texto2 = "mi texto y una comilla simple (')"
+text1 = "mi texto y una comilla simple (')"
 #   simples
-texto1 = 'mi texto y una comilla doble (")'
+text2= 'mi texto y una comilla doble (")'
 #   3 dobles
-texto3 = """mi texto con "comillas" de dos 'tipos'"""
+text3 = """mi texto con "comillas" de dos 'tipos'"""
 #   3 simples
-texto4 ='''mi texto con caracteres de escape: \" o \' '''
+text4 ='''mi texto con caracteres de escape: \" o \' '''
 
-print(texto1, texto2, texto3, texto4, sep="\n")
+print(text1, text2, text3, text4, sep="\n")
 
 
 # Caracteres de escape
-texto5 = "Usa \" para escapar comillas dobles entre comillas dobles"
-print(texto5)
+text5 = "Usa \" para escapar comillas dobles entre comillas dobles"
+print(text5)
 
 
 # Interpolar variables
-numero = 5
-num_dict = {"numero1": 3, "numero2": 9}
+number = 5
+num_dict = {"num1": 3, "num2": 9}
 
-texto6 = "Interpola un número aquí %d y otro aquí %d." % (numero, 6)
-texto7 = "Interpola aquí {} y otro aquí ({}).".format(numero, 7)
-texto8 = "Interpola aquí {num1} y aquí ({num2}) otro.".format(num2=numero, num1=8)
-texto9 = "Ahora {numero1} y ({numero2}).".format(**num_dict)
-texto10 = f"Interpola números aquí {numero} y aquí ({num_dict['numero2']})."
+text6 = "Interpola un número aquí %d y otro aquí %d." % (number, 6)
+text7 = "Interpola aquí {} y otro aquí ({}).".format(number, 7)
+text8 = "Interpola aquí {num1} y aquí ({num2}) otro.".format(num2=number, num1=8)
+text9 = "Ahora {numo1} y ({num2}).".format(**num_dict)
+text10 = f"Interpola números aquí {number} y aquí ({num_dict['numero2']})."
 
-print(texto5, texto6, texto7, texto8, texto9, texto10, sep="\n")
+print(text5, text6, text7, text8, text9, text10, sep="\n")
 
 
 # Manipular cadenas
-texto_base = "Python es un lenguaje de propósito general"
+base_text = "Python es un lenguaje de propósito general"
 
-primera_parte = texto_base[:10]
-segunda_parte = texto_base[10:]
-final = texto_base[-5:]
-medio = texto_base[13:24]
+first_parte = base_text[:10]
+second_parte = base_text[10:]
+final = base_text[-5:]
+middle_part = base_text[13:24]
 
-print(primera_parte, segunda_parte, final, medio, sep="\n")
+print(first_part, second_part, final, middle_part, sep="\n")
 
 
 # Algunas funciones propias de las cadenas de texto
-texto_base = "Python es un lenguaje de propósito general"
+base_text = "Python es un lenguaje de propósito general"
 
-texto_base.upper()  # Pasar a mayúsculas
-texto_base.title()  # Pasar a mayúsculas la primer letra de cada palabra
-texto_base.startswith("P")  # El texto empieza por P??
+base_text.upper()  # Pasar a mayúsculas
+base_text.title()  # Pasar a mayúsculas la primer letra de cada palabra
+base_text.startswith("P")  # El texto empieza por P??
 
 
 # Usa la ayuda (help) directamente en la terminal
 help(str)
 help(str.startswith)
-help(texto_base.startswith)
+help(base_text.startswith)
